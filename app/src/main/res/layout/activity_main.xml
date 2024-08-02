@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:VoiceRect="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        VoiceRect:layout_constraintEnd_toEndOf="parent"
+        VoiceRect:layout_constraintStart_toStartOf="parent"
+        VoiceRect:layout_constraintTop_toTopOf="parent" />
+
+    <cn.org.wenet.wekws.VoiceRectView
+        android:id="@+id/voiceRectView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        VoiceRect:RectCount="50"
+        VoiceRect:RectDownColor="@color/green"
+        VoiceRect:RectOffset="0"
+        VoiceRect:RectSpeed="300"
+        VoiceRect:RectTopColor="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
